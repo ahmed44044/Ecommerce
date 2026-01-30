@@ -1,0 +1,125 @@
+/* Container */
+.form-group {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(255,255,255,0.7);
+  transition: transform 0.3s;
+}
+
+.form-group:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+ .form-group h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Form */
+ .form-group form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input wrapper for floating label effect */
+ .form-group .input-group {
+  position: relative;
+}
+
+ .form-group input {
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+  background: #f7f7f7;
+}
+
+/* Floating label effect */
+ .form-group input:focus,
+ .form-group input:not(:placeholder-shown) {
+  border-color: #007bff;
+}
+
+ .form-group input:focus + label,
+ .form-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+  background: #f7f7f7;
+  padding: 0 5px;
+}
+
+/* Labels */
+ .form-group label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+  background: transparent;
+}
+
+/* Button */
+ .form-group button {
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+ .form-group button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+ .form-group button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Message */
+.form-group p {
+  text-align: center;
+  font-weight: 600;
+  color: green;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .form-group {
+    padding: 20px 25px;
+  }
+
+  .form-group input, button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+}

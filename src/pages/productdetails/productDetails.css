@@ -1,0 +1,201 @@
+.item-details{
+    /* padding: 50px 0; */
+}
+.item-details .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-details .imgs-item{
+    width: 40%;
+}
+.item-details .imgs-item .big-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.item-details .imgs-item .big-img img{
+    max-height:450px;
+}
+
+.item-details .imgs-item .sm-img{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.item-details .imgs-item .sm-img .img-div-sm{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.item-details .imgs-item .sm-img img{
+    width: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.details-item{
+    width: 58%;
+}
+
+.item-details .details-item .name{
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.item-details .details-item .stars{
+    margin: 15px 0;
+    display: flex;
+    gap: 5px;
+
+}
+.item-details .details-item .stars svg{
+    fill: #f8d941;
+    font-size: 18px;
+
+}
+.item-details .details-item .price{
+    font-size: 22px;
+    margin: 20px 0;
+}
+.item-details .details-item h5{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.item-details .details-item .desc{
+    line-height: 1.5;
+}
+
+.item-details .details-item .stock{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.item-details .details-item .btn{
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 12px 15px;
+    border: 1px solid var(--main-color);
+    transition: var(--transition);
+}
+.item-details .details-item .btn.in-cart{
+    background: transparent;
+    color: var(--main-color);
+    pointer-events: none;
+}
+
+
+
+
+
+
+.item-details .details-item .btn svg{
+    font-size: 20px;
+}
+
+
+
+.item-details .details-item .icons{
+
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    transition: var(--transition);
+}
+
+
+.item-details .details-item .icons span{
+    height: 40px;
+    width: 40px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.item-details .details-item .icons span.in-fav{
+    background: var(--main-color);
+}
+.item-details .details-item .icons span.in-fav svg{
+    color: var(--white-color);
+}
+
+.item-details .details-item .icons span:hover {
+    background: var(--main-color);
+}
+.item-details .details-item .icons span:hover svg{
+    fill: var(--white-color);
+}
+
+@media (max-width: 1024px) {
+    .item-details .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .item-details .imgs-item,
+    .details-item {
+        width: 100%;
+    }
+    .item-details .imgs-item .sm-img img{
+        width: 30%;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .item-details .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .item-details .imgs-item .big-img img{
+    max-height:550px;
+}
+    .item-details .imgs-item .sm-img {
+        justify-content: center;
+        gap: 5px;
+        overflow-x: auto;
+    }
+    .item-details .imgs-item .sm-img img{
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+    .item-details .details-item .name{
+        font-size: 22px;
+        text-align: center;
+    }
+    .item-details .details-item .price{
+        font-size: 20px;
+        text-align: center;
+    }
+    .item-details .details-item h5,
+    .item-details .details-item .desc,
+    .item-details .details-item .stock{
+        text-align: center;
+    }
+    .item-details .details-item .btn{
+        width: 100%;
+    }
+}
+
+
+.loading-item .item-details .imgs-item{
+    height: 600px;
+}
+.loading-item .item-details .details-item{
+    height: 600px;
+    padding-top: 100px;
+}
+
+.loading-item .item-details .details-item h5{
+    margin-bottom: 50px;
+    height: 30px;
+}
