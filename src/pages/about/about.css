@@ -4,14 +4,12 @@
   padding: 20px;
 }
 
-/* العنوان */
 .about-page h1 {
   text-align: center;
   font-size: 34px;
   margin-bottom: 40px;
 }
 
-/* كارت */
 .about-card {
   background: #fff;
   border-radius: 16px;
@@ -20,19 +18,16 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
-/* عناوين الكروت */
 .about-card h2 {
   margin-bottom: 10px;
   font-size: 22px;
 }
 
-/* نص */
 .about-card p {
   color: #555;
   line-height: 1.6;
 }
 
-/* why choose us */
 .about-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

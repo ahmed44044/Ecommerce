@@ -186,26 +186,6 @@ header{
     opacity: 0;
   }
 
-/* .btm-header .nav-links{
-    display: flex;
-    height: 100%;
-}
-.nav-links .nav-link-icon{
-    opacity: 0;
-}
-.btm-header .nav-links li{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 25px;
-}
-.btm-header .nav-links li.active{
-    background:#0079ca ;
-}
-.btm-header .nav-links li a{
-    color: var(--white-color);
-
-} */
 .btm-header .sign-register-icons{
     display: flex;
     gap: 20px;

@@ -1,7 +1,6 @@
 import { useLoaderData, useNavigation } from "react-router-dom"
 import type { Product } from "../../util/https";
 import './productDetails.css'
-// import ProductDetailsLoaderSkeleton from "../../components/ProductDetailsLoaderSkeleton/ProductDetailsLoaderSkeleton ";
 import SlideProduct from "../../components/slideProducts/SlideProduct";
 import ProductDetailsLoading from "./ProductDetailsLoading";
 import SlideProductLoading from "../../components/slideProducts/SlideProductLoading";

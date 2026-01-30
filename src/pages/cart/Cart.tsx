@@ -2,11 +2,15 @@ import { FaTrashAlt } from 'react-icons/fa'
 import useCart from '../../Hooks/useCart'
 import './cart.css'
 import PageTransition from '../../components/PageTransition'
+import toast from 'react-hot-toast'
 export default function Cart() {
     const {cartItems,decreaseQuantity,increaseQuantity,removeFromCart} = useCart()
     const totalPrice = cartItems.reduce((acc,item)=> acc + item.price * item.quantity,0)
  
-    
+    function handleRemove(id:number,title:string){
+        removeFromCart(id)
+        toast.error(`${title} Removed from Cart `)
+    }
   return (
     <PageTransition>
            <div className='checkout'>
@@ -34,7 +38,7 @@ export default function Cart() {
                                 </div>
                             </div>
                         </div>
-                            <button onClick={()=>removeFromCart(item.id)} className='delete-icon'><FaTrashAlt/></button>
+                            <button onClick={()=>handleRemove(item.id,item.title)} className='delete-icon'><FaTrashAlt/></button>
                     </div>
                 ))
             )}

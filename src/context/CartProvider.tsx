@@ -20,6 +20,7 @@ function addFav(item:Omit<CartItem, "quantity">) {
 
 function removeFav(id:number){
     setFavItems((prev)=>prev.filter((i)=> i.id !== id))
+    
 }
 
 useEffect(()=>{

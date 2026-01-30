@@ -1,5 +1,5 @@
 import { Form, useNavigation, useActionData } from "react-router-dom";
-
+import './signup.css'
 export default function Login() {
   const navigation = useNavigation();
   const error = useActionData() as string;

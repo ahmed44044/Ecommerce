@@ -1,4 +1,3 @@
-/* Container */
 .form-group {
   max-width: 400px;
   margin: 50px auto;
@@ -14,7 +13,6 @@
   transform: translateY(-5px);
 }
 
-/* Title */
  .form-group h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -23,14 +21,12 @@
   letter-spacing: 1px;
 }
 
-/* Form */
  .form-group form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Input wrapper for floating label effect */
  .form-group .input-group {
   position: relative;
 }
@@ -46,7 +42,6 @@
   background: #f7f7f7;
 }
 
-/* Floating label effect */
  .form-group input:focus,
  .form-group input:not(:placeholder-shown) {
   border-color: #007bff;
@@ -62,7 +57,6 @@
   padding: 0 5px;
 }
 
-/* Labels */
  .form-group label {
   position: absolute;
   left: 15px;
@@ -74,7 +68,6 @@
   background: transparent;
 }
 
-/* Button */
  .form-group button {
   padding: 15px 0;
   font-size: 16px;
@@ -99,7 +92,6 @@
   box-shadow: none;
 }
 
-/* Message */
 .form-group p {
   text-align: center;
   font-weight: 600;
